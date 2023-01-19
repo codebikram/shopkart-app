@@ -24,6 +24,11 @@ const Nav = () => {
               contact
             </Link>
           </li>
+          <li>
+            <Link className="nav-link" to="sign-in">
+              sign in
+            </Link>
+          </li>
         </ul>
       </nav>
       <Outlet />
