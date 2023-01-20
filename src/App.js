@@ -4,7 +4,7 @@ import Home from './routes/Home.component';
 import Contact from './routes/Contact.component';
 import Nav from './routes/navigation/Nav.component';
 import Error from './routes/Error.component';
-import SignIn from './routes/sign-in/SignIn.component';
+import Authentication from './routes/authentication/Authentication.component';
 import Shop from './routes/Shop.component';
 
 const App = () => {
@@ -27,8 +27,8 @@ const App = () => {
           element: <Contact />,
         },
         {
-          path: 'sign-in',
-          element: <SignIn />,
+          path: 'auth',
+          element: <Authentication />,
         },
       ],
     },

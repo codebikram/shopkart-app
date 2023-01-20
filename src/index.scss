@@ -8,7 +8,6 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-transform: uppercase;
 }
 
 code {
@@ -19,4 +18,5 @@ code {
 a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
