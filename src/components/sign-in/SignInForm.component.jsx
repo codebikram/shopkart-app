@@ -27,7 +27,7 @@ const SignInForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { user } = await signInAuthUserWithEmailPassword(email, password);
+      await signInAuthUserWithEmailPassword(email, password);
       resetFormFields();
     } catch (error) {
       switch (error.code) {
@@ -43,7 +43,7 @@ const SignInForm = () => {
     }
   };
   const googleSignIn = async () => {
-    const { user } = await signInWithGooglePopup();
+    await signInWithGooglePopup();
   };
   return (
     <div className="sign-in-container">
