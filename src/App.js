@@ -6,6 +6,7 @@ import Nav from './routes/navigation/Nav.component';
 import Error from './routes/error/Error.component';
 import Authentication from './routes/authentication/Authentication.component';
 import Shop from './routes/shop/Shop.component';
+import Checkout from './routes/checkout/Checkout.component';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const App = () => {
         {
           path: 'auth',
           element: <Authentication />,
+        },
+        {
+          path: 'checkout',
+          element: <Checkout />,
         },
       ],
     },

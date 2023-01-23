@@ -10,7 +10,7 @@ import { CartContext } from '../../contexts/cart.context';
 
 const Nav = () => {
   const { currentUser } = useContext(UserContext);
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen } = useContext(CartContext);
   return (
     <Fragment>
       <nav className="navigation">
@@ -42,11 +42,7 @@ const Nav = () => {
               </Link>
             </li>
           )}
-          <li
-            onClick={() => {
-              setIsCartOpen(!isCartOpen);
-            }}
-          >
+          <li>
             <CartIcon />
           </li>
         </ul>
