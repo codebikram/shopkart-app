@@ -48,6 +48,7 @@ const Nav = () => {
         </ul>
         {isCartOpen && <CartDropdown />}
       </nav>
+
       <Outlet />
     </Fragment>
   );
