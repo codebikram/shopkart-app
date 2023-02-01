@@ -26,11 +26,7 @@ const Nav = () => {
               shop
             </Link>
           </li>
-          <li>
-            <Link className="nav-link" to="contact">
-              contact
-            </Link>
-          </li>
+
           {currentUser ? (
             <span className="nav-link" onClick={signOutClick}>
               sign out
